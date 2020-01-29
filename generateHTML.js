@@ -53,7 +53,7 @@ function generateHTML(data) {
          }
          .wrapper {
          background-color: ${colors[data.color].wrapperBackground};
-         padding-top: 100px;
+         padding-top: 50px;
          }
          body {
          background-color: white;
@@ -63,11 +63,12 @@ function generateHTML(data) {
          main {
          background-color: #E9EDEE;
          height: auto;
-         padding-top: 30px;
+         padding-top: 50px;
          }
          h1, h2, h3, h4, h5, h6 {
          font-family: 'BioRhyme', serif;
          margin: 0;
+         text-align: center;
          }
          h1 {
          font-size: 3em;
@@ -101,13 +102,14 @@ function generateHTML(data) {
          border-radius: 6px;
          }
          .photo-header img {
-         width: 250px;
-         height: 250px;
+         width: 200px;
+         height: 200px;
          border-radius: 50%;
          object-fit: cover;
-         margin-top: -75px;
+         margin-top: -55px;
          border: 6px solid ${colors[data.color].photoBorderColor};
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
+         text-align: center;
          }
          .photo-header h1, .photo-header h2 {
          width: 100%;
@@ -133,7 +135,7 @@ function generateHTML(data) {
          margin-top: 10px;
          }
          .container {
-         padding: 50px;
+         padding: 40px;
          padding-left: 100px;
          padding-right: 100px;
          }
@@ -142,16 +144,16 @@ function generateHTML(data) {
            display: flex;
            flex-wrap: wrap;
            justify-content: space-between;
-           margin-top: 20px;
-           margin-bottom: 20px;
+           margin-top: 10px;
+           margin-bottom: 10px;
          }
 
          .card {
-           padding: 20px;
+           padding: 10px;
            border-radius: 6px;
            background-color: ${colors[data.color].headerBackground};
            color: ${colors[data.color].headerColor};
-           margin: 20px;
+           margin: 10px;
          }
          
          .col {
@@ -164,7 +166,7 @@ function generateHTML(data) {
          color: inherit;
          font-weight: bold;
          }
-
+         
          @media print { 
           body { 
             zoom: .75; 

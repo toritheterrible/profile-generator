@@ -5,7 +5,7 @@ const fs = require("fs");
 const util = require("util");
 var generateHTML = require("./generateHTML");
 var pdf = require('html-pdf');
-
+var config = {format: 'A4'};
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -59,7 +59,7 @@ inquirer
                     }
                 data.starCount = starCount;
              
-        pdf.create(generateHTML(data)).toFile('./profile.pdf', function(err, res) {
+        pdf.create(generateHTML(data, config)).toFile('./profile.pdf', function(err, res) {
 
             if (err) {
                 throw err;
