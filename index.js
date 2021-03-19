@@ -58,6 +58,10 @@ inquirer
                       starCount = starCount + count;
                     }
                 data.starCount = starCount;
+
+                html = generateHTML(data);
+        
+                writeFileAsync("index.html", html);
              
         pdf.create(generateHTML(data, config)).toFile('./profile.pdf', function(err, res) {
 
@@ -65,9 +69,7 @@ inquirer
                 throw err;
             }
                 
-                    html = generateHTML(data);
-        
-         writeFileAsync("index.html", html);
+
         });
     });
     });
