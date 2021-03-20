@@ -7,12 +7,19 @@ Use Github API to retrieve info that will be placed in HTML and PDF
 Use Promises to achieve goal
 
 
-### How to Start
+### <u> How to Start </u>
 
-npm install
-cd into folder
-node index.js
-voila!
+npm install <br>
+cd into folder <br>
+node index.js  <br>
+voila!  <br>
 
-![pdf](profile.pdf)
-![html](index.html)
+
+![html](/images/html.png)
+
+<br>
+<br>
+<br>
+<br>
+
+![pdf](/images/pdf.png)
